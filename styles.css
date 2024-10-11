@@ -302,7 +302,6 @@ img {
     padding: 30px;
     background: #FFF8EA;
     border-radius: 40px;
-    display: flex;
     flex-direction: column;
     gap: 10px;
     
