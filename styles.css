@@ -61,7 +61,7 @@ h1 {
 }
 
 .hero-content {
-    color: #fff;
+    color: #d7cfcd;
     font-family: "Wittgenstein", serif;
     text-transform: uppercase;
 }
@@ -222,10 +222,10 @@ img {
 }
 
 .hero {
-    max-height: 800px;
+    max-height: 600px;
     object-fit: contain;
     object-position: center;
-    border-radius: 8px;
+    border-radius: 40px;
 }
 
 .hero-container {
@@ -297,7 +297,6 @@ img {
     font-size: 14px;
     line-height: 1.5;
 }
-
 .cart-container{
     display:grid;
     grid-template-columns:max-content;
@@ -340,12 +339,16 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+    padding: 20px;
+    background-color: #D7CFCD;
+    border-radius:40px;
 }
 
 .total-container  p {
     font-size: 26px;
-    
+    padding: 20px;
+    background-color: #D7CFCD;
+    border-radius:40px;
 }
 
 #checkout {
