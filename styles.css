@@ -319,11 +319,6 @@ img {
    
 }
 
-.cart-item img {
-    width: 100px;
-    border-radius: 10px;
-}
-
 .cart-price {
     font-size: 26px;
 }
@@ -427,10 +422,6 @@ label {
         padding: 10px;
     }
 
-    .cart-item img {
-        width: 50%;
-        margin: 0 auto;
-    }
 
     .nav {
         grid-template-columns: 1fr 1fr;
