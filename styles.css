@@ -380,7 +380,7 @@ img {
 }
 
 .contact-container .side {
-    background: url('./images/hero.webp') no-repeat center center;
+    background: #A6705D;
     background-size: cover;
     border-radius: 30px;
 }
