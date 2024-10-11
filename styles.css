@@ -313,10 +313,16 @@ img {
     align-items: center;
     gap: 20px;
     width: 100%;
+    padding: 30px;
+    background: #FFF8EA;
+    border-radius: 40px;
 }
 
 .cart-item div {
     flex: 1;
+    padding: 30px;
+    background: #FFF8EA;
+    border-radius: 40px;
 }
 
 .cart-item img {
