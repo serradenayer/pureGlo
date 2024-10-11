@@ -298,10 +298,10 @@ img {
     line-height: 1.5;
 }
 .cart-container{
+    display:grid;
     padding: 30px;
     background: #FFF8EA;
     border-radius: 40px;
-    width:70%;
     display: flex;
     flex-direction: column;
     gap: 10px;
