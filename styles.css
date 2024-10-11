@@ -270,11 +270,7 @@ img {
     background: #FFF8EA;
     border-radius: 40px;
 }
-.cart-container{
-    padding: 30px;
-    background: #FFF8EA;
-    border-radius: 40px;
-}
+
 .product-container h2{
     padding: 0px 5px 5px 5px;
     font-size: 100px;
@@ -301,7 +297,11 @@ img {
     font-size: 14px;
     line-height: 1.5;
 }
-
+.cart-container{
+    padding: 30px;
+    background: #FFF8EA;
+    border-radius: 40px;
+}
 .cart-container {
     display: flex;
     flex-direction: column;
