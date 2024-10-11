@@ -23,7 +23,7 @@ body {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
     font-family: "Wittgenstein", serif;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 body.dark-mode {
@@ -296,18 +296,7 @@ img {
     font-size: 14px;
     line-height: 1.5;
 }
-.fancy-cart{
-    position: absolute;
-    margin-top: 0%;
-    margin-left: 75%;
-    bottom: 3px;
-    left: 0;
-    background: rgba(255,255,255,0.3);
-    padding: 50px;
-    backdrop-filter: blur(20px);
-    border-radius: 0 30px 0 30px;
-    width: 25%;
-}
+
 .cart-container {
     display: flex;
     flex-direction: column;
