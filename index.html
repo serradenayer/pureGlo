@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pure Glo Skincare</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="icons/logo.svg" type="image/svg">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- JS -->
+        <script src="script.js" async></script>
+    </head>
+
+    <body>
+        <header class="nav">
+            <input type="text" required="" placeholder="Search" autocomplete="off">
+
+            <nav>
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li>Pure Glo</li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <button id="DarkLight" class="button">🌙</button>
+
+                <div class="dialog-container">
+                    <dialog>
+                        <button autofocus id="closeCart">Close</button>
+                        <p>Cart</p>
+                    </dialog>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-container">
+                <img src="icons/logo.svg" alt="Pure Glo Logo">
+
+                <div class="hero-content">
+                    <h1>Pure Glo Skincare</h1>
+                    <p>Shop our Skincare Products </p>
+                </div>
+            </div>
+
+            <section id="shop">
+                <div id="products" class="product-container">
+                <h2>Skin &amp; Self Love</h2>
+                </div>
+            </section>
+
+            <section class="fancy-cart">
+                <h2>Your Cart</h2>
+
+                <div id="cart" class="cart-container">
+                    <p id="emptyPlaceholder">Your cart is empty</p>
+                </div>
+
+                <div id="total" class="total-container">
+                    <span id="tax"></span>
+                    <span id="shipping"></span>
+                    <p>Total: $<span id="totalCount">0.00</span></p>
+                </div>
+                <button id="checkout" class="button1">Checkout</button>
+            </section>
+
+            <section id="contact">
+                
+                <div class="contact-container">
+                    <div class="side"></div>
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea id="comments" name="comments"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Method</label>
+                            <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+                            <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+                        </div>
+                        <button type="submit" class="button1">Submit</button>
+                    </form>
+                </div>
+                <div id="formMessage"></div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <small>&copy; 2024 Pure Glo Skincare</small>
+            <br>
+            <small>All rights reserved</small>
+        </footer>
+
+        <div id="toastContainer" class="toast-container"></div>
+    </body>
+
+</html>
