@@ -299,7 +299,7 @@ img {
 }
 .cart-container{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    grid-template-columns:max-content;
     padding: 30px;
     background: #FFF8EA;
     border-radius: 40px;
