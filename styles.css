@@ -360,8 +360,8 @@ img {
     border-radius: 8px;
     display: flex;
     height: 30px;
-    width: 100%;
-    justify-content: center;
+    width: 40%;
+    justify-content: left;
     font-size: 18px;
     font-weight: bold;
     border: 1px solid rgba(0,0,0,0.3);
