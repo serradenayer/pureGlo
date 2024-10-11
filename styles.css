@@ -188,6 +188,7 @@ nav ul li:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px 0;
+    justify-content: center;
 }
 
 .nav ul li {
