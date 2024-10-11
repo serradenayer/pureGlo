@@ -297,7 +297,7 @@ img {
     font-size: 14px;
     line-height: 1.5;
 }
-.cart{
+section .cart{
     padding: 30px;
     background-color: #FFF8EA;
     border-radius: 40px;
