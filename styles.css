@@ -334,9 +334,9 @@ img {
 .total-container {
     display: flex;
     flex-direction: column;
-    background-color: #D7CFCD;
     border-radius: 40px;
     padding: 10px;
+    background-color: #D7CFCD;
 }
 
 .total-container  p {
