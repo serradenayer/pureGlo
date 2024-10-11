@@ -301,7 +301,7 @@ img {
     display:grid;
     grid-template-columns:max-content;
     padding: 30px;
-    background: #FFF8EA;
+    background-color: #FFF8EA;
     border-radius: 40px;
     flex-direction: column;
     gap: 10px;
@@ -313,16 +313,12 @@ img {
     align-items: center;
     gap: 20px;
     width: 100%;
-    padding: 30px;
-    background: #FFF8EA;
-    border-radius: 40px;
+   
 }
 
 .cart-item div {
     flex: 1;
-    padding: 30px;
-    background: #FFF8EA;
-    border-radius: 40px;
+   
 }
 
 .cart-item img {
