@@ -320,7 +320,7 @@ img {
 }
 
 .cart-item img {
-    width: 30%;
+    width: 100px;
     border-radius: 10px;
 }
 
@@ -340,7 +340,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #D7CFCD;
+    background-color:#E8EBF4;
 }
 
 .total-container  p {
@@ -427,6 +427,10 @@ label {
         padding: 10px;
     }
 
+    .cart-item img {
+        width: 50%;
+        margin: 0 auto;
+    }
 
     .nav {
         grid-template-columns: 1fr 1fr;
