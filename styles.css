@@ -270,6 +270,14 @@ img {
     background: #FFF8EA;
     border-radius: 40px;
 }
+.product-container section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    background: #FFF8EA;
+    border-radius: 40px;
+}
 .product-container h2{
     padding: 0px 5px 5px 5px;
     font-size: 100px;
