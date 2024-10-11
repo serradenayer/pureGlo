@@ -342,12 +342,14 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #D7CFCD;
-    border-radius:40px;
+    
 }
 
 .total-container  p {
     font-size: 26px;
+    padding: 20px;
+    background-color: #D7CFCD;
+    border-radius:40px;
 }
 
 #checkout {
