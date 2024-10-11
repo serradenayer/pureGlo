@@ -297,11 +297,7 @@ img {
     font-size: 14px;
     line-height: 1.5;
 }
-section .cart{
-    padding: 30px;
-    background-color: #FFF8EA;
-    border-radius: 40px;
-}
+
 .cart-container{
     display:grid;
     grid-template-columns:max-content;
