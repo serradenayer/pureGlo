@@ -21,9 +21,6 @@ body {
     color: var(--text-color-light);
     font-family: "Wittgenstein", serif;
     transition: background-color 0.5s, color 0.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 body.dark-mode {
@@ -34,7 +31,6 @@ body.dark-mode {
 /* Layout */
 header, main, footer {
     max-width: 1280px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -42,7 +38,6 @@ header, main, footer {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 50px;
     padding: 30px 0;
 }
@@ -56,7 +51,6 @@ footer {
 h1, h2, h3 {
     font-family: "Wittgenstein", serif;
     text-transform: uppercase;
-    text-align: center;
 }
 
 h1 {
@@ -97,8 +91,6 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     font-family: "Wittgenstein", serif;
-    display: block;
-    margin: 0 auto;
 }
 
 input {
@@ -176,7 +168,6 @@ textarea {
     padding: 30px;
     background: var(--accent-color);
     border-radius: 40px;
-    justify-items: center;
 }
 
 .product-container h2 {
@@ -214,185 +205,40 @@ textarea {
 }
 
 /* Cart */
-.cart-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    gap: 10px;
-    align-items: center;
-}
-
 .cart-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-}
-
-.cart-item div {
-    flex: 1;
+    display: grid;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 10px;
 }
 
 .cart-item img {
-    width: 100px;
-    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.cart-price {
-    font-size: 26px;
+.nav {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px;
 }
 
-.remove-btn {
-    background-color: rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+.nav ul {
+    justify-content: normal;
 }
 
-/* Totals */
-.total-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+.hero-content, .hero-container img {
+    border-radius: 0;
 }
 
-.total-container p {
-    font-size: 26px;
-    text-align: center;
+.hero-content h1 {
+    font-size: 24px;
 }
 
-#checkout {
-    font-family: "Wittgenstein", bold, serif;
-    text-transform: uppercase;
-    border-radius: 8px;
-    display: flex;
+.hero-content p {
+    font-size: 16px;
+}
+
+.hero-content {
+    padding: 5px;
     width: 100%;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* Errors */
-.error {
-    color: #BF4141;
-}
-
-/* Contact Form */
-.contact-container {
-    background: var(--accent-color);
-    padding: 20px;
-    border-radius: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: center;
-}
-
-.contact-container .side {
-    background: var(--background-color-light);
-    background-size: cover;
-    border-radius: 30px;
-}
-
-label {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-}
-
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 30px;
-    flex: 1;
-    align-items: center;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-}
-
-/* Toasts */
-.toast-container {
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-.toast {
-    visibility: hidden;
-    min-width: 250px;
-    background: #E0FBE2;
-    text-align: center;
-    border-radius: 5px;
-    padding: 16px;
-    font-size: 17px;
-    transition: visibility 0s, opacity 0.5s linear;
-    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
-}
-
-.toast.show {
-    visibility: visible;
-    opacity: 1;
-}
-
-.toast.hide {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.toast-error {
-    border: 1px solid #FFC7C7;
-    background-color: #FFE3E3;
-}
-
-.dark-mode .toast {
-    color: var(--text-color-dark);
-}
-
-/* Media Queries */
-@media (max-width: 750px) {
-    header input {
-        display: none;
-    }
-
-    header li {
-        display: none;
-    }
-
-    .side {
-        display: none;
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-container input {
-        max-width: 100%;
-    }
-
-    .cart-item {
-        display: grid;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-        padding: 10px;
-    }
-
-    .cart-item img {
-        width: 50%;
-        margin: 0px;
-    }}
