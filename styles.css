@@ -32,22 +32,22 @@ body.dark-mode {
 }
 
 body.dark-mode .button1 {
-    background-color: #E8EBF4;
-    color: #030B0D;
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
 }
 
 body.dark-mode .product-container {
     background: #D7CFCD;
-    color: #030B0D;
+    color: var(--text-color-light);
 }
 
 body.dark-mode input, body.dark-mode textarea {
     background: #D7CFCD;
-    color: #030B0D;
+    color: var(--text-color-light);
 }
 
 body.dark-mode .toast {
-    color: #030B0D;
+    color: var(--text-color-light);
 }
 
 body.dark-mode .contact-container {
