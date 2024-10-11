@@ -190,7 +190,7 @@ nav ul li:nth-child(2) {
     padding: 20px 0;
 }
 
-.nav ul {
+.nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
