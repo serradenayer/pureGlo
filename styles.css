@@ -336,6 +336,7 @@ img {
     flex-direction: column;
     gap: 20px;
     background-color: #D7CFCD;
+    border-radius: 40px;
 }
 
 .total-container  p {
