@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +7,16 @@
     scroll-behavior: smooth;
 }
 
+header, main, footer {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 :root {
     --background-color-light: #A6705D;
     --text-color-light: #030B0D;
     --background-color-dark: #030B0D;
     --text-color-dark: #E8EBF4;
-    --accent-color: #FFF8EA;
 }
 
 body {
@@ -28,18 +31,113 @@ body.dark-mode {
     color: var(--text-color-dark);
 }
 
-/* Layout */
-header, main, footer {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
+body.dark-mode .button1 {
+    background-color: #E8EBF4;
+    color: #030B0D;
 }
 
-main {
+body.dark-mode .product-container {
+    background: #D7CFCD;
+    color: #030B0D;
+}
+
+body.dark-mode input, body.dark-mode textarea {
+    background: #D7CFCD;
+    color: #030B0D;
+}
+
+body.dark-mode .toast {
+    color: #030B0D;
+}
+
+body.dark-mode .contact-container {
+    background: #D7CFCD;
+    color: #030B0D;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.hero-content {
+    color: #fff;
+    font-family: "Wittgenstein", serif;
+    text-transform: uppercase;
+}
+
+
+.hero-content p {
+    font-family: "Wittgenstein", serif;
+    text-transform: uppercase;
+}
+
+.toast-container {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 30px 0;
+    gap: 10px;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background: #E0FBE2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    font-size: 17px;
+    transition: visibility 0s, opacity 0.5s linear;
+    filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toast.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.toast-error {
+    border: 1px solid #FFC7C7;
+    background-color: #FFE3E3;
+}
+
+section h2 {
+    font-family: "Wittgenstein", serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Wittgenstein", serif;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    max-width: 200px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    max-width: 100%;
+
+}
+
+form input {
+    max-width: 100%;
 }
 
 footer {
@@ -47,66 +145,45 @@ footer {
     text-align: center;
 }
 
-/* Typography */
-h1, h2, h3 {
-    font-family: "Wittgenstein", serif;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(2) {
+    font-family: "Wittgenstein", bold ,serif;
     text-transform: uppercase;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-h3 {
     font-size: 24px;
 }
-
-/* Buttons */
+   
 .button1 {
-    background-color: rgba(51, 51, 51, 0.05);
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 7px 12px;
-    text-align: center;
-    vertical-align: baseline;
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Wittgenstein", serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 7px 12px;
+  text-align: center;
+  vertical-align: baseline;
+  border: 1px solid rgba(0,0,0,0);
 }
 
 .button1:hover {
-    background-color: rgba(51, 51, 51, 0.1);
-    border: 1px solid rgba(51, 51, 51, 0.6);
+  background-color: rgba(51, 51, 51, 0.1);
+  border: 1px solid rgba(51, 51, 51, 0.6);
 }
 
-/* Inputs */
-input, textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    font-family: "Wittgenstein", serif;
-}
-
-input {
-    max-width: 200px;
-}
-
-textarea {
-    max-width: 100%;
-}
-
-.dark-mode input, .dark-mode textarea {
-    background: var(--accent-color);
-    color: var(--text-color-dark);
-}
-
-/* Navigation */
 .nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -117,11 +194,12 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     list-style: none;
     gap: 50px;
 }
 
-.nav div:nth-child(1), .nav div:nth-child(3) {
+.nav div:nth-child(3), .nav div:nth-child(1) {
     display: flex;
     align-items: center;
 }
@@ -130,7 +208,19 @@ textarea {
     justify-content: flex-end;
 }
 
-/* Hero */
+main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 30px;
+}
+
 .hero {
     max-height: 800px;
     object-fit: contain;
@@ -139,50 +229,58 @@ textarea {
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position:sticky;
+    align-items: left;
+}
+.hero-container img{
+    padding-bottom: 50px;
 }
 
-.hero-container img {
-    padding-bottom: 50px;
+.hero-container h1 {
+    
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-container p {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .hero-content {
     position: absolute;
     bottom: 3px;
     left: 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255,255,255,0.3);
     padding: 50px;
     backdrop-filter: blur(20px);
     border-radius: 0 30px 0 30px;
     width: 75%;
-    color: #fff;
 }
 
-/* Products */
 .product-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     padding: 30px;
-    background: var(--accent-color);
+    background: #FFF8EA;
     border-radius: 40px;
 }
-
-.product-container h2 {
-    padding: 0 5px;
+.product-container h2{
+    padding: 0px 5px 5px 5px;
     font-size: 100px;
-    color: var(--background-color-light);
-    text-align: center;
+    line-height: 0px 0px 0px 150px;
+    color:#A6705D;
 }
-
 .product {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .product img {
@@ -191,7 +289,7 @@ textarea {
 
 .product:hover img {
     transform: scale(1.01);
-    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));
 }
 
 .product p {
@@ -199,46 +297,161 @@ textarea {
     line-height: 1.5;
 }
 
-.dark-mode .product-container {
-    background: #D7CFCD;
-    color: var(--text-color-dark);
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+    
 }
 
-/* Cart */
 .cart-item {
-    display: grid;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    padding: 10px;
-}
-
-.cart-item img {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.nav {
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 10px;
-}
-
-.nav ul {
-    justify-content: normal;
-}
-
-.hero-content, .hero-container img {
-    border-radius: 0;
-}
-
-.hero-content h1 {
-    font-size: 24px;
-}
-
-.hero-content p {
-    font-size: 16px;
-}
-
-.hero-content {
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
     width: 100%;
 }
 
+.cart-item div {
+    flex: 1;
+}
+
+.cart-item img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.cart-price {
+    font-size: 26px;
+}
+
+.remove-btn {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.total-container  p {
+    font-size: 26px;
+}
+
+#checkout {
+    font-family: "Wittgenstein", bold ,serif;
+    text-transform: uppercase;
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.error {
+    color: #BF4141;
+}
+
+.contact-container {
+    background: #FFF8EA;
+    padding: 20px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contact-container .side {
+    background: #A6705D;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}  
+
+@media (max-width: 750px) {
+    header input { 
+        display: none;
+    }
+
+    header li {
+        display: none;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container input {
+        max-width: 100%;
+    }
+
+    .cart-item {
+        display: grid;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        padding: 10px;
+    }
+
+    .cart-item img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .nav {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 10px;
+    }
+
+    .nav ul {
+        justify-content: normal;
+    }
+
+    .hero-content, .hero-container img {
+        border-radius: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        padding: 5px;
+        width: 100%;
+    }
+   
+    
+    
+      
+}
