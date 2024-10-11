@@ -300,14 +300,15 @@ img {
 .cart-container{
     display:grid;
     grid-template-columns:max-content;
-    padding: 30px;
-    background-color: #FFF8EA;
-    border-radius: 40px;
     flex-direction: column;
     gap: 10px;
     
 }
-
+.cart h2{
+    padding: 30px;
+    background-color: #FFF8EA;
+    border-radius: 40px;
+}
 .cart-item {
     display: flex;
     align-items: center;
