@@ -144,7 +144,9 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
+nav{
+    background: rgba(255,255,255,0.3);
+}
 a {
     text-decoration: none;
     color: inherit;
